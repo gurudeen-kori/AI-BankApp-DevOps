@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region for EKS cluster"
   type        = string
-  default     = "us-west-2"
+  default     = "ap-south-1"
 }
 
 variable "cluster_name" {
@@ -19,17 +19,17 @@ variable "cluster_version" {
 variable "node_instance_type" {
   description = "EC2 instance type for EKS worker nodes"
   type        = string
-  default     = "t3.medium"
+  default     = "m7i-flex.large"
 }
 
 variable "node_desired_count" {
   description = "Desired number of worker nodes"
   type        = number
-  default     = 3
+  default     = 5
 }
 
 variable "node_max_count" {
   description = "Maximum number of worker nodes"
   type        = number
-  default     = 5
+  default     = 6
 }
