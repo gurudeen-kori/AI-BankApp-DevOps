@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 env:
-  DOCKERHUB_REPO: trainwithshubham/ai-bankapp-eks
+  DOCKERHUB_REPO: gurudeenkori/ai_bankapp
 
 jobs:
   build-and-push:
